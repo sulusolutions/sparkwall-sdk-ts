@@ -8,11 +8,11 @@ create and manage your plans, wallets and other things without using the dashboa
 To use the library, simple import it from your code, and specify your API key, for example:
 
 ```typescript
-import { SparkwallApi } from '@sulu/sparkwall-sdk-ts';
+import { Sparkwall } from '@sulusolutions/sparkwall-sdk-ts';
 
 const apiKey = '[YOUR API KEY]';
 
-const sparkwallApiClient = new SparkwallApi({
+const sparkwallApiClient = new Sparkwall({
   BASE: 'https://sparkwall-api.sulu.sh/api',
   TOKEN: apiKey,
 });
@@ -22,6 +22,8 @@ const getRequests = async () => await sparkwallApiClient.requests.getRequests({
   pageSize: 10,
 });
 ```
+
+This package uses axios under the hood to send requests.
 
 ## Build and Publish
 

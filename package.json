@@ -1,6 +1,6 @@
 {
-  "name": "sparkwall-sdk",
-  "version": "1.0.0",
+  "name": "@sulusolutions/sparkwall-sdk",
+  "version": "0.1.0",
   "packageManager": "yarn@3.6.3",
   "description": "TypeScript SDK library for using the Sparkwall API",
   "engines": {
@@ -13,7 +13,7 @@
     "dist"
   ],
   "scripts": {
-    "generate": "npx openapi --input https://sparkwall-api.sulu.sh/openapi/openapi.json --output ./generated --client axios --name SparkwallApi --useOptions",
+    "generate": "npx openapi --input https://sparkwall-api.sulu.sh/openapi/openapi.json --output ./generated --client axios --name Sparkwall --useOptions",
     "build": "npx tsc",
     "sample": "npx ts-node sample.ts",
     "spellcheck": "npx cspell --no-progress \"**\""
@@ -27,11 +27,13 @@
     "url": "https://github.com/sulusolutions/sparkwall-sdk-ts/issues"
   },
   "homepage": "https://github.com/sulusolutions/sparkwall-sdk-ts",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "form-data": "^4.0.0"
+  },
   "devDependencies": {
     "@types/node": "20.12.7",
-    "axios": "1.6.8",
     "cspell": "8.7.0",
-    "form-data": "4.0.0",
     "openapi-typescript-codegen": "0.29.0",
     "ts-node": "10.9.2",
     "typescript": "5.2.2"
