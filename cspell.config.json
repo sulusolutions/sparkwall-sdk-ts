@@ -1,0 +1,16 @@
+{
+  "version": "0.2",
+  "useGitignore": true,
+  "ignorePaths": [],
+  "patterns": [],
+  "ignoreRegExpList": [],
+  "words": [
+    "codegen",
+    "lnurl",
+    "sparkwall",
+    "sulusolutions",
+    "csstype",
+    "openapi",
+    "pino"
+  ]
+}
