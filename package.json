@@ -7,8 +7,14 @@
     "node": "^20.0.0",
     "npm": "please-use-yarn"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "generate": "npx openapi --input https://sparkwall-api.sulu.sh/openapi/openapi.json --output ./generated --client axios --name SparkwallApi --useOptions",
+    "build": "npx tsc",
     "sample": "npx ts-node sample.ts",
     "spellcheck": "npx cspell --no-progress \"**\""
   },
