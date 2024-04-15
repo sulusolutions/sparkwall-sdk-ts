@@ -1,6 +1,6 @@
 {
   "name": "@sulusolutions/sparkwall-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "packageManager": "yarn@3.6.3",
   "description": "TypeScript SDK library for using the Sparkwall API",
   "engines": {
